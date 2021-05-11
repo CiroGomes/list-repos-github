@@ -1,0 +1,67 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API Docs",
+    "description": "Take Blip test API",
+    "version": "1.0.0",
+    "contact": {
+      "email": "c-iro@hotmail.com"
+    }
+  },
+  "paths": {
+    "/github/search": {
+      "get": {
+        "tags": [
+          "Repositórios no GitHub do user 'takenet'"
+        ],
+        "summary": "Lista os 5 Repositórios mais antigos em C# do usuário 'takenet'",
+        "description": "Lista os 5 Repositórios mais antigos em C# do usuário 'takenet'",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "0": {
+                      "$ref": "#/definitions/Repository"
+                    },
+                    "1": {
+                      "$ref": "#/definitions/Repository"
+                    },
+                    "2": {
+                      "$ref": "#/definitions/Repository"
+                    },
+                    "3": {
+                      "$ref": "#/definitions/Repository"
+                    },
+                    "4": {
+                      "$ref": "#/definitions/Repository"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Repository": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "avatar_url": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
