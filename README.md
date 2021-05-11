@@ -1,5 +1,10 @@
 # API de integração com API Pública do GitHub
 
+- ### **Devido ao que foi solicitado ser apenas uma consulta a uma API externa, acredito que uma função lambda já atenderia muito bem a demanda de forma mais barata, rápida e eficiente.**
+- ### Esta versão é otimizada para ser uma Função Lambda da AWS. Existe uma outra branch (acesse [clicando aqui](https://github.com/CiroGomes/list-repos-github/tree/v1.0.0-api-rest)) que contém um servidor Node um pouco mais incrementado, utilizando conceitos SOLID, rotas e teste unitário.
+
+---
+
 - API desenvolvida de forma otimizada a ser utilizada como uma Função Lambda (AWS), utilizando NodeJS na versão 14.x.x.
 - API realiza consulta na API Pública do GitHub e retorna apenas os dados necessários para utilização pelo bot.
 
