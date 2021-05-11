@@ -6,12 +6,12 @@ const {
 
 class SearchGithubReposController {
   async handle(request, response) {
-    const authenticateUserUseCase = new SearchGithubReposUseCase(
+    const searchGithubReposUseCase = new SearchGithubReposUseCase(
       GitHubApiRepository
     );
-    const token = await authenticateUserUseCase.execute();
+    const repos = await searchGithubReposUseCase.execute();
 
-    return response.json(token);
+    return response.json(repos);
   }
 }
 
