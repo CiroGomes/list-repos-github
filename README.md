@@ -15,7 +15,8 @@
   - Executar comando `npm install`
   - Executar comando `npm run dev` ou `npm run start`
 - Rota para busca dos repositórios: http://localhost:3333/github/search
-  - Pode realizar consulta direto no navegador, ou caso esteja utilizando alguma ferramenta, utilizar método `GET`
+  - Pode realizar consulta direto no navegador, ou caso esteja utilizando alguma ferramenta, utilizar método `GET`. Também é possível realizar consulta pela documentação da API.
+- Link para documentação (utilizando swagger): http://localhost:3333/api-docs
 - Comando para executar teste:
   - `npm run test`
 - ### API realiza consulta na API Pública do GitHub e retorna apenas os dados necessários para utilização pelo bot.
