@@ -1,7 +1,7 @@
 # API de integração com API Pública do GitHub
 
 - ### **Devido ao que foi solicitado ser apenas uma consulta a uma API externa, acredito que uma função lambda já atenderia muito bem a demanda de forma mais barata, rápida e eficiente. Versão otimizada para função lambda implementada em outra branch, e pode ser encontrada [clicando aqui](https://github.com/CiroGomes/list-repos-github/tree/main)**
-- ### Esta versão é um backend um pouco mais incrementado, contendo um servidor NodeJS, utilizando conceitos SOLID, rotas e teste unitário.
+- ### Esta versão é um backend um pouco mais incrementado, contendo um servidor NodeJS, utilizando conceitos SOLID, rotas e teste de integração.
 
 ---
 
