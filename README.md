@@ -1,16 +1,18 @@
 # API de integração com API Pública do GitHub
 
 - ### **Devido ao que foi solicitado ser apenas uma consulta a uma API externa, acredito que uma função lambda já atenderia muito bem a demanda de forma mais barata, rápida e eficiente. Versão otimizada para função lambda implementada em outra branch, e pode ser encontrada [clicando aqui](https://github.com/CiroGomes/list-repos-github/tree/main)**
-- ### Esta versão é um backend um pouco mais incrementado, contendo um servidor Node, utilizando conceitos SOLID, rotas e teste unitário.
+- ### Esta versão é um backend um pouco mais incrementado, contendo um servidor NodeJS, utilizando conceitos SOLID, rotas e teste unitário.
 
 ---
 
 - API utilizando NodeJS na versão 14.x.x.
-- Como servidor não está online, é possível baixar o código e seguir os seguintes passo para sua execução:
+- Como servidor não está online, é possível baixar o código e seguir os seguintes passos para sua execução:
   - Clonar repositório
+  - Entrar na pasta `Api`
   - Executar comando `npm install`
-  - Executar comando `npm run dev`
+  - Executar comando `npm run dev` ou `npm run start`
 - Rota para busca dos repositórios: http://localhost:3333/github/search
+  - Pode realizar consulta direto no navegador, ou caso esteja utilizando alguma ferramenta, utilizar método `GET`
 - Comando para executar teste:
   - `npm run test`
 - ### API realiza consulta na API Pública do GitHub e retorna apenas os dados necessários para utilização pelo bot.
