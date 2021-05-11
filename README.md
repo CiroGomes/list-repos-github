@@ -9,6 +9,9 @@
 - Como servidor não está online, é possível baixar o código e seguir os seguintes passos para sua execução:
   - Clonar repositório
   - Entrar na pasta `Api`
+  - Criar cópia de arquivo `.env.example` e renomear para `.env`
+  - Dentro do arquivo `.env`, adicionar url da api do github.
+    - Dentro do arquivo deve ficar assim: `GITHUB_API_URL=https://api.github.com`
   - Executar comando `npm install`
   - Executar comando `npm run dev` ou `npm run start`
 - Rota para busca dos repositórios: http://localhost:3333/github/search
